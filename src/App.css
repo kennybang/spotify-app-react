@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+/*------------------ TABLE ------------- */
+
+.tableRow{
+  background-color: rgb(71, 63, 53);
+  border-bottom: 1px solid #ffff; 
+}
+
+tbody .tableRow:hover{
+  background-color: rgb(125, 111, 95);
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,td{
+  padding: 12px 15px;
+}
+
+.trackInfo {
+  text-align: left;
+}
+
+/*------------------ Dropdown ------------- */
+
