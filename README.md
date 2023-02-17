@@ -6,6 +6,7 @@ You can choose the time frame on your top songs:
 * Approximately last 6 months
 * Several years back
 
+<img src="/public/example.JPG" height="500">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
