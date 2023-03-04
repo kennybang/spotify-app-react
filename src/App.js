@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 function App() {
-  const CLIENT_ID = "INSERT CLIENT ID"
+  const CLIENT_ID = process.env.REACT_APP_SPOTIFY_KEY // Client id key set from local env file. Either create an env file and put it there or just replace with your key here.
   const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
