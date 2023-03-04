@@ -142,11 +142,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <h1>Spotify React</h1>
-          {!token ?
-          loggerIn()
-                   
-           : <button onClick={logout}>Log out</button>}
+          <h1 style={{color:"#1DB954"}}>Spotify React</h1> 
+          {!token ? login() : <button className='btn' onClick={logout}>Log out</button>}
 
         
            {token?
