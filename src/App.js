@@ -54,7 +54,7 @@ function App() {
       }
     })
     setTracks(data.items)
-    renderArtists()
+    //renderArtists()
   }
 
   const logout = () => {
