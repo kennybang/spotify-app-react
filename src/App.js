@@ -94,17 +94,24 @@ function App() {
 
   const renderTracks = () => {
     var temp = 1
-    return tracks.map(tracks => (
-      <tr className="tableRow" key={tracks.id}>
+    return tracks.map(tracks => (  /* Need key otherwise React gives warning */
+      <tr className="tableRow" key={tracks.id}> 
         <td>
-          {temp++}
+          {temp++}    {/* Most listened number position */} 
         </td>
-        <td>
-        {tracks.album.images.length ? <img width= {"100"} src={tracks.album.images[0].url} alt=""/> : <div>No Image</div>}
+        <td>          {/* Track image */}
+        {tracks.album.images.length ? <img className="image" width= {"100"} src={tracks.album.images[0].url} alt=""/> : <div>No Image</div>}
         </td>
-        <td className="trackInfo">
-        <h6>Track name: {tracks.name} <br/>
-            Artist name: {tracks.artists[0].name} </h6>
+        <td className="trackInfo"> {/*Track Info*/}
+        <span style={{fontSize: "15px"}}> {tracks.name} </span> <br></br>
+        
+           {
+            tracks.artists.map((artists, index) =>(
+              <span style={{opacity: "0.5"}} key={artists.id}>
+                { (index ? ', ' : '') + artists.name}
+              </span>
+            )
+            )}          
         </td>
         
       </tr>
