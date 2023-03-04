@@ -125,6 +125,17 @@ function App() {
   )
  }
 
+ const login = () => {
+  return (
+    <div>
+      <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=${RESPONSE_TYPE}`}>
+        <button className='btn'>Log in</button>
+        
+      </a>
+    </div>
+  );
+
+ }
   
   
 
