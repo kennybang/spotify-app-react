@@ -143,7 +143,7 @@ function App() {
            <div>
             <div className="wrapper">
               <div className="menu">
-                <select id="name" defaultValue={"DEFAULT"} onChange={(e) => setTimeRange(e.target.value)}>
+                <select style={{color:"#1DB954"}} id="name" defaultValue={"DEFAULT"} onChange={(e) => setTimeRange(e.target.value)}>
                   <option value="DEFAULT" disabled>Choose term</option>    
                   <option value={"short_term"}>Last 4 weeks</option>
                   <option value={"medium_term"}>Last 6 months</option>
