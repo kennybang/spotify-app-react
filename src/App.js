@@ -158,7 +158,11 @@ function App() {
                   
 
                   </div>
-           : <h2>Please login</h2>
+           : <div className='wrapper'>
+           <div style={{backgroundColor:"#212121",
+                          color:"white",
+                          margin:"0px"}}>Please login</div>
+              </div>
            } 
            {token &&    
            
