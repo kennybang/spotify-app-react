@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #212121;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,14 @@
 
 .App-link {
   color: #61dafb;
+  
+}
+
+.App-body{
+  background-color: #212121;
+  flex-direction: column;
+  display: flex;
+  min-height: 75vh;
 }
 
 @keyframes App-logo-spin {
@@ -40,26 +48,71 @@
 /*------------------ TABLE ------------- */
 
 .tableRow{
-  background-color: rgb(71, 63, 53);
-  border-bottom: 1px solid #ffff; 
+  background-color: #212121;
+  border-bottom: 1px solid #ffff;
+  transition: 0.3s; 
 }
 
 tbody .tableRow:hover{
-  background-color: rgb(125, 111, 95);
+  background-color: #535353;
 }
 
 table{
   border-collapse: collapse;
   width: 100%;
+  color: white;
+  
 }
 
 td,td{
   padding: 12px 15px;
+  color: white;
 }
 
 .trackInfo {
   text-align: left;
 }
 
-/*------------------ Dropdown ------------- */
+/* Image grow when hovering a tablerow  */
 
+
+.image{
+  transition: 0.3s;
+}
+
+.tableRow:hover .image{
+  transform:scale(2.5);
+
+}
+
+
+
+
+/*------------------ Button ------------- */
+
+.btn{
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #121212;
+  color: white;
+}
+
+
+/*         Dropdown                  */
+.wrapper{
+  padding-bottom: 25px;
+  padding-top: 10px;
+  
+}
+
+.menu select{
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #121212;
+  
+}
