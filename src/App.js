@@ -144,6 +144,11 @@ function App() {
       <header className="App-header">
           <h1 style={{color:"#1DB954"}}>Spotify React</h1> 
           {!token ? login() : <button className='btn' onClick={logout}>Log out</button>}
+          
+          
+      </header>
+      <div className='App-body'>
+      
 
         
            {token?
@@ -195,9 +200,7 @@ function App() {
             
             </table> 
         }
-          
-          
-      </header>
+      </div>
     </div>
   );
 }
