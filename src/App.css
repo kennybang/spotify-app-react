@@ -47,42 +47,11 @@
 
 /*------------------ TABLE ------------- */
 
-.tableRow{
-  background-color: #212121;
-  border-bottom: 1px solid #ffff;
-  transition: 0.3s; 
-}
-
-tbody .tableRow:hover{
-  background-color: #535353;
-}
-
 table{
   border-collapse: collapse;
   width: 100%;
   color: white;
   
-}
-
-td,td{
-  padding: 12px 15px;
-  color: white;
-}
-
-.trackInfo {
-  text-align: left;
-}
-
-/* Image grow when hovering a tablerow  */
-
-
-.image{
-  transition: 0.3s;
-}
-
-.tableRow:hover .image{
-  transform:scale(2.5);
-
 }
 
 
